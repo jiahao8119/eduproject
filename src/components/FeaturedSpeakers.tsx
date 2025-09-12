@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Star, Award, BookOpen } from 'lucide-react';
 
 const FeaturedSpeakers = () => {
@@ -59,6 +59,26 @@ const FeaturedSpeakers = () => {
     }
   ];
 
+  // Hardcoded role details for demonstration
+  const roleDetails: Record<string, string> = {
+    'Motivational Speaker': 'Motivational Speakers inspire audiences to achieve their goals and unlock their full potential through powerful storytelling and actionable advice.',
+    'Life Coach': 'Life Coaches help individuals identify their goals, overcome obstacles, and make positive changes in their personal and professional lives.',
+    'Success Mentor': 'Success Mentors provide guidance and support to help people realize their visions and turn dreams into reality.',
+    'Empowerment Speaker': 'Empowerment Speakers focus on building confidence and self-worth, especially in underrepresented groups.',
+    'Wellness Expert': 'Wellness Experts promote mental and physical health, resilience, and holistic well-being.',
+    'Innovation Speaker': 'Innovation Speakers encourage creative thinking and breakthrough ideas to drive progress and change.',
+  };
+
+  const [selectedSpeaker, setSelectedSpeaker] = useState<null | typeof speakers[0]>(null);
+
+  const handleViewProfile = (speaker: typeof speakers[0]) => {
+    setSelectedSpeaker(speaker);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedSpeaker(null);
+  };
+
   return (
     <section id="speakers" className="py-20 bg-gradient-to-br from-purple-600 via-pink-500 to-orange-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -111,7 +131,10 @@ const FeaturedSpeakers = () => {
                 </div>
 
                 <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-4">
-                  <button className="w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-black py-2 rounded-full font-bold hover:shadow-lg transition-all duration-200">
+                  <button
+                    className="w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-black py-2 rounded-full font-bold hover:shadow-lg transition-all duration-200"
+                    onClick={() => handleViewProfile(speaker)}
+                  >
                     View Profile
                   </button>
                 </div>
@@ -119,6 +142,39 @@ const FeaturedSpeakers = () => {
             );
           })}
         </div>
+
+        {/* Modal for role details */}
+        {selectedSpeaker && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
+            <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full relative">
+              <button
+                className="absolute top-3 right-3 text-gray-500 hover:text-black text-2xl font-bold"
+                onClick={handleCloseModal}
+                aria-label="Close"
+              >
+                &times;
+              </button>
+              <div className="flex flex-col items-center">
+                <img
+                  src={selectedSpeaker.image}
+                  alt={selectedSpeaker.name}
+                  className="w-24 h-24 rounded-full object-cover mb-4"
+                />
+                <h3 className="text-2xl font-bold mb-1 text-gray-900">{selectedSpeaker.name}</h3>
+                <p className="text-yellow-500 font-semibold mb-2">{selectedSpeaker.role}</p>
+                <p className="mb-4 text-gray-700 italic">"{selectedSpeaker.tagline}"</p>
+                <div className="mb-4 text-gray-800 text-sm text-center">
+                  {roleDetails[selectedSpeaker.role] || 'No details available.'}
+                </div>
+                <div className="bg-yellow-100 rounded-full py-1 px-3 inline-block">
+                  <span className="text-yellow-700 text-sm font-medium">
+                    {selectedSpeaker.specialty}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

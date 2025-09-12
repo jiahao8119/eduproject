@@ -103,7 +103,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 SpeakUp. All rights reserved. Made with ❤️ for dreamers and achievers.
+              © 2025 SpeakUp. All rights reserved. Developed By BlinkCode.
             </div>
 
             {/* Social Links */}

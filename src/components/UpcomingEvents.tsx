@@ -8,7 +8,7 @@ const UpcomingEvents = () => {
       title: "Breaking Mental Barriers",
       speaker: {
         name: "Sarah Johnson",
-        image: "https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=400"
+        image: "/public/ryanl.jpeg"
       },
       date: "March 15, 2025",
       time: "7:00 PM - 9:00 PM",
@@ -22,7 +22,7 @@ const UpcomingEvents = () => {
       title: "The Success Mindset",
       speaker: {
         name: "Michael Chen",
-        image: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400"
+        image: "/public/ryanl.jpeg"
       },
       date: "March 22, 2025",
       time: "6:30 PM - 8:30 PM",
@@ -36,7 +36,7 @@ const UpcomingEvents = () => {
       title: "Resilience & Recovery",
       speaker: {
         name: "Dr. Emily Rodriguez",
-        image: "https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=400"
+        image: "/public/ryanl.jpeg"
       },
       date: "March 29, 2025",
       time: "7:30 PM - 9:00 PM",

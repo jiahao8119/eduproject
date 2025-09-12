@@ -1,4 +1,3 @@
-import React from 'react';
 import { Play, Calendar } from 'lucide-react';
 
 const Hero = () => {
@@ -42,8 +41,8 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Floating Stats */}
-        <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 hidden lg:flex space-x-8">
+        {/* Floating Stats (now below buttons) */}
+        <div className="mt-10 hidden lg:flex justify-center space-x-8">
           <div className="bg-white/10 backdrop-blur-md rounded-lg p-4 text-center border border-white/20">
             <div className="text-2xl font-bold text-yellow-400">1000+</div>
             <div className="text-white/80 text-sm">Lives Changed</div>
