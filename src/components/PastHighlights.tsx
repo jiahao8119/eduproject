@@ -41,6 +41,16 @@ const PastHighlights = () => {
     }
   ];
 
+  // Reusable QuoteBox component
+  const QuoteBox = ({ quote }: { quote: string }) => (
+    <div className="bg-white/5 rounded-lg p-3 border border-white/10 mb-4">
+      <Quote className="w-4 h-8 text-orange-400 mb-2" />
+      <p className="text-gray-300 text-sm italic">
+        {quote}
+      </p>
+    </div>
+  );
+
   return (
     <section id="highlights" className="py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -57,7 +67,7 @@ const PastHighlights = () => {
           {highlights.map((highlight) => (
             <div
               key={highlight.id}
-              className="group bg-white/5 backdrop-blur-md rounded-2xl overflow-hidden border border-white/10 hover:border-orange-500/50 hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300"
+              className="group bg-white/5 backdrop-blur-md rounded-2xl overflow-hidden border border-white/10 hover:border-orange-500/50 hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 flex flex-col relative"
             >
               {/* Video Thumbnail */}
               <div className="relative">
@@ -88,24 +98,18 @@ const PastHighlights = () => {
               </div>
 
               {/* Content */}
-              <div className="p-6">
-                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-orange-400 transition-colors duration-200">
-                  {highlight.title}
-                </h3>
-                
-                <p className="text-orange-400 font-medium mb-3 text-sm">
-                  {highlight.speaker}
-                </p>
-
-                {/* Quote */}
-                <div className="bg-white/5 rounded-lg p-3 border border-white/10 mb-4">
-                  <Quote className="w-4 h-4 text-orange-400 mb-2" />
-                  <p className="text-gray-300 text-sm italic">
-                    {highlight.quote}
+              <div className="p-6 flex-1 flex flex-col">
+                <div className="flex-1 flex flex-col justify-start">
+                  <h3 className="text-lg font-bold text-white mb-2 group-hover:text-orange-400 transition-colors duration-200">
+                    {highlight.title}
+                  </h3>
+                  <p className="text-orange-400 font-medium mb-3 text-sm">
+                    {highlight.speaker}
                   </p>
                 </div>
-
-                <button className="w-full bg-gradient-to-r from-orange-500 to-pink-500 text-white py-2 rounded-full font-bold hover:shadow-lg hover:scale-105 transition-all duration-200">
+                {/* Quote */}
+                <QuoteBox quote={highlight.quote} />
+                <button className="w-full bg-gradient-to-r from-orange-500 to-pink-500 text-white py-2 rounded-full font-bold hover:shadow-lg hover:scale-105 transition-all duration-200 mt-auto">
                   Watch Replay
                 </button>
               </div>
@@ -113,11 +117,11 @@ const PastHighlights = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <button className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-3 rounded-full font-bold hover:bg-white/20 hover:scale-105 transition-all duration-300">
             View All Highlights
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

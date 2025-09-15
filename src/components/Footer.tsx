@@ -55,22 +55,22 @@ const Footer = () => {
               <span className="text-2xl font-bold">SpeakUp</span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Empowering individuals worldwide through transformational talks and life-changing experiences. Your journey to greatness starts here.
+              Empowering individuals worldwide through transformational talks and life-changing experiences. Your journey to greatness starts from here.
             </p>
             
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-gray-400">
                 <Mail className="w-4 h-4 text-orange-500" />
-                <span>hello@speakup.com</span>
+                <span>customer@speakup.com</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-400">
                 <Phone className="w-4 h-4 text-orange-500" />
-                <span>+1 (555) 123-4567</span>
+                <span>+601133094116</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-400">
                 <MapPin className="w-4 h-4 text-orange-500" />
-                <span>New York, NY</span>
+                <span>Kuala Lumpur, MY</span>
               </div>
             </div>
           </div>
@@ -103,7 +103,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 SpeakUp. All rights reserved. Developed By BlinkCode.
+              © 2025 SpeakUp. All rights reserved. Developed By BlinkCodeDev.
             </div>
 
             {/* Social Links */}
