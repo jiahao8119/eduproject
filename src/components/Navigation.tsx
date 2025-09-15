@@ -33,7 +33,7 @@ const Navigation = () => {
             <div className="p-2 bg-gradient-to-r from-orange-500 to-pink-500 rounded-full">
               <Mic className="w-6 h-6 text-white" />
             </div>
-            <span className="text-xl font-bold text-white">SpeakUp</span>
+            <span className="text-xl font-bold text-black">SpeakUp</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -42,7 +42,7 @@ const Navigation = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-white hover:text-yellow-400 transition-colors duration-200 font-medium"
+                className="text-black hover:text-yellow-400 transition-colors duration-200 font-medium"
               >
                 {item.name}
               </a>

@@ -63,7 +63,7 @@ const UpcomingEvents = () => {
           {events.map((event) => (
             <div
               key={event.id}
-              className="group bg-white/70 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+              className="group bg-white/70 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col"
             >
               {/* Speaker Image */}
               <div className="relative mb-6">
@@ -109,7 +109,7 @@ const UpcomingEvents = () => {
                 </div>
               </div>
 
-              <button className="w-full bg-gradient-to-r from-orange-500 to-pink-500 text-white py-3 rounded-full font-bold hover:shadow-lg hover:scale-105 transition-all duration-200">
+              <button className="w-full bg-gradient-to-r from-orange-500 to-pink-500 text-white py-3 rounded-full font-bold hover:shadow-lg hover:scale-105 transition-all duration-200 mt-auto">
                 Reserve Your Seat
               </button>
             </div>

@@ -85,7 +85,7 @@ const Hero = () => {
                     <iframe
                       width="100%"
                       height="400"
-                      src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+                      src="https://www.youtube.com/embed/43TmnIaL3n4?si=qAzWG3vkDmWpUsPk"
                       title="YouTube video player"
                       frameBorder="0"
                       allow="autoplay; encrypted-media"
