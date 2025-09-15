@@ -7,8 +7,8 @@ const UpcomingEvents = () => {
       id: 1,
       title: "Breaking Mental Barriers",
       speaker: {
-        name: "Sarah Johnson",
-        image: "/public/ryanl.jpeg"
+        name: "Ryan Lee",
+        image: "/images/ryanl.jpeg"
       },
       date: "March 15, 2025",
       time: "7:00 PM - 9:00 PM",
@@ -21,8 +21,8 @@ const UpcomingEvents = () => {
       id: 2,
       title: "The Success Mindset",
       speaker: {
-        name: "Michael Chen",
-        image: "/public/ryanl.jpeg"
+        name: "Ryan Wong",
+        image: "/images/ryanl.jpeg"
       },
       date: "March 22, 2025",
       time: "6:30 PM - 8:30 PM",
@@ -35,8 +35,8 @@ const UpcomingEvents = () => {
       id: 3,
       title: "Resilience & Recovery",
       speaker: {
-        name: "Dr. Emily Rodriguez",
-        image: "/public/ryanl.jpeg"
+        name: "Ryan Chow",
+        image: "/images/ryanl.jpeg"
       },
       date: "March 29, 2025",
       time: "7:30 PM - 9:00 PM",
