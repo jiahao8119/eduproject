@@ -6,10 +6,10 @@ const PastHighlights = () => {
     {
       id: 1,
       title: "The Power of Positive Thinking",
-      speaker: "Dr. Amanda Success",
-      quote: "Your thoughts create your reality - choose them wisely.",
+      speaker: "Elon Musk",
+      quote: "I'm going to go to Mars. I will go to Mars",
       thumbnail:
-        "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "/images/elon.jpg",
       views: "2.5M views",
       duration: "45:30",
       video: "https://www.youtube.com/embed/43TmnIaL3n4?si=qAzWG3vkDmWpUsPk",
@@ -17,37 +17,37 @@ const PastHighlights = () => {
     {
       id: 2,
       title: "Overcoming Fear and Anxiety",
-      speaker: "Mike Courage",
+      speaker: "Tim Cook",
       quote:
         "Courage isn't the absence of fear - it's taking action despite it.",
       thumbnail:
-        "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "/images/cook.png",
       views: "1.8M views",
       duration: "38:15",
-      video: "https://www.youtube.com/embed/43TmnIaL3n4?si=qAzWG3vkDmWpUsPk",
+      video: "https://www.youtube.com/embed/D80RTRjP1tQ?si=083aNTMSnX3wxmqE",
     },
     {
       id: 3,
       title: "Building Unstoppable Confidence",
-      speaker: "Sarah Confident",
+      speaker: "Andrew Tate",
       quote:
-        "Confidence is not 'they will like me'. Confidence is 'I'll be fine if they don't'.",
+        "When a man speaks you will listen",
       thumbnail:
-        "https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "/images/topg.png",
       views: "3.2M views",
       duration: "52:20",
-      video: "https://www.youtube.com/embed/43TmnIaL3n4?si=qAzWG3vkDmWpUsPk",
+      video: "https://www.youtube.com/embed/zE4qla0JnIw?si=DwwlNp2moiLYGGnm",
     },
     {
       id: 4,
       title: "The Art of Resilience",
-      speaker: "James Strong",
-      quote: "Fall seven times, rise eight - that's the warrior's way.",
+      speaker: "Lei Jun",
+      quote: "伟大的公司赢得人心",
       thumbnail:
-        "https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "/images/leijun.png",
       views: "1.5M views",
       duration: "41:45",
-      video: "https://www.youtube.com/embed/43TmnIaL3n4?si=qAzWG3vkDmWpUsPk",
+      video: "https://www.youtube.com/embed/V_wOXkIxxcc?si=ozv04ry99xvRr0zg",
     },
   ];
 
