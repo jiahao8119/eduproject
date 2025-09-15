@@ -12,7 +12,7 @@ const PastHighlights = () => {
         "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=600",
       views: "2.5M views",
       duration: "45:30",
-      video: "https://youtu.be/43TmnIaL3n4?si=qAzWG3vkDmWpUsPk",
+      video: "https://www.youtube.com/embed/43TmnIaL3n4?si=qAzWG3vkDmWpUsPk",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const PastHighlights = () => {
         "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=600",
       views: "1.8M views",
       duration: "38:15",
-      video: "https://youtu.be/43TmnIaL3n4?si=qAzWG3vkDmWpUsPk",
+      video: "https://www.youtube.com/embed/43TmnIaL3n4?si=qAzWG3vkDmWpUsPk",
     },
     {
       id: 3,
@@ -36,7 +36,7 @@ const PastHighlights = () => {
         "https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=600",
       views: "3.2M views",
       duration: "52:20",
-      video: "https://youtu.be/43TmnIaL3n4?si=qAzWG3vkDmWpUsPk",
+      video: "https://www.youtube.com/embed/43TmnIaL3n4?si=qAzWG3vkDmWpUsPk",
     },
     {
       id: 4,
@@ -47,7 +47,7 @@ const PastHighlights = () => {
         "https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=600",
       views: "1.5M views",
       duration: "41:45",
-      video: "https://youtu.be/43TmnIaL3n4?si=qAzWG3vkDmWpUsPk",
+      video: "https://www.youtube.com/embed/43TmnIaL3n4?si=qAzWG3vkDmWpUsPk",
     },
   ];
 
